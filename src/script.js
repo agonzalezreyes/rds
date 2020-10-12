@@ -1,6 +1,6 @@
 var img;
 var redColor, cyanColor, white, black;
-var smallPoint = 1.0;
+var smallPoint = 1.4;
 var k_alpha = 255;
 var k_val = 255;
 var layer1, layer2, layerMash;
@@ -48,7 +48,7 @@ function DoRDS(){
     
     resizeCanvas(w*2, h*2);
 
-    let count = int(img.width * img.height/2.0);
+    let count = int(img.width * img.height/2.2);
     print(count);
        
         for(var i = 0; i < count; i++){
@@ -63,8 +63,8 @@ function DoRDS(){
             var shiftRed = -(smallPoint);
             // print(pixel);
             if (pixel[0] == k_val) {
-                shiftCyan = 2.5 * smallPoint;
-                shiftRed = -2.5 * smallPoint;
+                shiftCyan = 2 * smallPoint;
+                shiftRed = -2 * smallPoint;
             }
 
             // r dot 
