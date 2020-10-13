@@ -1,6 +1,6 @@
 var img;
 var redColor, cyanColor, white, black;
-var smallPoint = 1.4;
+var smallPoint = 1.2;
 var k_alpha = 255;
 var k_val = 255;
 var layer1, layer2, layerMash;
@@ -10,7 +10,7 @@ var hover;
 'use strict';
 
 function preload() {
-  img = loadImage('./img/snoopy.png');
+  img = loadImage('./img/stanford.png');
 }
 
 function setup() {
@@ -48,7 +48,7 @@ function DoRDS(){
     
     resizeCanvas(w*2, h*2);
 
-    let count = int(img.width * img.height/2.2);
+    let count = int(img.width * img.height/2.4);
     print(count);
        
         for(var i = 0; i < count; i++){
